@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8f0fe;
+    color: #333333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid black; /* <-- Borde negro */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}

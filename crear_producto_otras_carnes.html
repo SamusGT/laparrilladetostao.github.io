@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir Otras Carnes</title>
+    <link rel="stylesheet" href="diseño_postobon.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .centrado {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-verde,
+        .btn-rojo {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid black;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .btn-verde {
+            background-color: green;
+            color: white;
+        }
+
+        .btn-verde:hover {
+            background-color: darkgreen;
+        }
+
+        .btn-rojo {
+            background-color: red;
+            color: white;
+        }
+
+        .btn-rojo:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Añadir Otras Carnes</h1>
+    <form action="agregar_otras:carnes.php" method="POST" enctype="multipart/form-data">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br>
+
+        <label>Cantidad (Lbs):</label><br>
+        <input type="number" name="cantidad" required><br>
+
+        <label>Fecha de Entrada:</label><br>
+        <input type="date" name="fecha" required><br>
+
+        <label>Imagen:</label><br>
+        <input type="file" name="imagen" accept="image/*" required><br>
+
+        <div class="centrado">
+            <button type="submit" class="btn-verde">Guardar</button>
+            <a href="otras_carnes.php"><button type="button" class="btn-rojo">Cancelar</button></a>
+        </div>
+    </form>
+</body>
+</html>

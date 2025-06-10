@@ -1,0 +1,59 @@
+/* Fondo y centrado del contenido */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('imagenes/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del contenedor */
+.contenido {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Estilo de los botones */
+.botones a button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+.botones a button:hover {
+    background-color: #dddddd;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid black; /* <-- Borde negro */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
